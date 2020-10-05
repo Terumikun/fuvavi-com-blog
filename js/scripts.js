@@ -13,6 +13,7 @@ $("#btn-menu-pc").click(function () {
     });
   }
 });
+/*
 $(window).resize(function () {
   var ws = $(window).width();
   if (ws < 1201) {
@@ -29,6 +30,8 @@ if (ws1 < 1201) {
 } else {
   $(".fvv-sidebar").removeClass("hidden-menu");
 }
+*/
+
 $(".btn-scroll-right").click(function (event) {
   event.preventDefault();
   $(".channel-menu").animate(
