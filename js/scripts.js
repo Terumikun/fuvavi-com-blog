@@ -74,8 +74,10 @@ $(".action-nav").click(function () {
   $(".dropdown-menu.f-notification").addClass("show");
 });
 
-$(".f-post-author-name p").html(getDatetime(arrPost.datePublished));
+try {
+  $(".f-post-author-name p").html('Xuất bản ' + getDatetime(arrPost.datePublished));
 
-$(".labelpost")
-  .html(arrPost.labels[0].label)
-  .attr("href", "/search/label/" + arrPost.labels[0].label);
+  $(".labelpost")
+    .html(arrPost.labels[0].label)
+    .attr("href", "/search/label/" + arrPost.labels[0].label);
+} catch (e) {}
