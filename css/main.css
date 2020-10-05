@@ -42,7 +42,7 @@ img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-sha
 a#click_loadpost {
     cursor: pointer;
 }
-.f-content .single-content .f-post-content-box .separator img {
+.text-left .separator img {
     text-align: center;
     margin: 15px auto;
     height: auto;
