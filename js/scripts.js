@@ -74,7 +74,7 @@ $(".action-nav").click(function () {
   $(".dropdown-menu.f-notification").addClass("show");
 });
 
-$(".f-post-author-name p").html(time_ago(arrPost.datePublished));
+$(".f-post-author-name p").html(getDatetime(arrPost.datePublished));
 
 $(".labelpost")
   .html(arrPost.labels[0].label)
