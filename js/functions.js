@@ -1,3 +1,10 @@
+function getDatetime(data) {
+  var nam = data.split("-")[0];
+  var thang = data.split("-")[1];
+  var ngay = data.split("-")[2].split("T")[0];
+  var ketqua = ngay + "/" + thang + "/" + nam;
+  return ketqua;
+}
 function owlCarousel() {
   $("#new-post-slide").owlCarousel({
     loop: true,
