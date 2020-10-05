@@ -73,3 +73,9 @@ $(".action-nav").click(function () {
   $(this).addClass("show");
   $(".dropdown-menu.f-notification").addClass("show");
 });
+
+$(".f-post-author-name p").html(time_ago(arrPost.datePublished));
+
+$(".labelpost")
+  .html(arrPost.labels[0].label)
+  .attr("href", "/search/label/" + arrPost.labels[0].label);
